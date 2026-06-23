@@ -9,20 +9,61 @@
 </head>
 <body>
     <div class="instagram-wrapper">
-        <div class="instagram-phone">
+     <div class="instagram-phone">
             <img src="./img/apresentacao-celular.png" alt="instagram apresentação">
         </div>
 
         <div class="instagram-login">
             <div class="group">
-                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo" >
-              <form id="formulario">
                 
-    <input type="text" id="nome" placeholder="Telefone, nome de usuário ou email"><br/>
-    <input type="text" id="mensagem" placeholder="Senha">
-      <button href="#" class="instagram-entrar">Entrar</button>
+                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo" >
+
+              <form id="formulario">
+    <input type="text" id="nome" placeholder="Telefone, nome de usuário ou email">
+
+
+<input type="password" id="mensagem" placeholder="Senha">
+
+<button type="submit" class="instagram-entrar">Entrar</button>
+
 
 </form>
+
+<style>
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Espaço entre os elementos */
+    width: 100%;
+}
+
+#formulario input {
+    width: 260px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+.instagram-entrar {
+    width: 260px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0095f6;
+    color: white;
+    cursor: pointer;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+</style>
+
 
 <div id="resultado"></div>
 
